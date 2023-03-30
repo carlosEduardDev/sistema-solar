@@ -1,0 +1,25 @@
+.preload {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 130vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.preload img {
+  width: 200px;
+  animation: rotate 1s infinite;
+}
+
+.preload p {
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+}

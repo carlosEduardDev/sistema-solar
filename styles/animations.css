@@ -1,0 +1,21 @@
+@keyframes background-solar-system {
+  0% {
+    background-position-x: -100vw;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0.4);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

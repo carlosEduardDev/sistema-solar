@@ -1,0 +1,114 @@
+.eE {
+  position: absolute;
+  width: 10px;
+  bottom: 5px;
+  animation: eE 4s 1 linear forwards;
+}
+
+@keyframes eE {
+  0% {
+    bottom: 5px;
+    right: 90%;
+  }
+  100% {
+    bottom: 5px;
+    right: 100%;
+    opacity: 0;
+  }
+}
+
+.cometa {
+  width: 20px;
+  position: absolute;
+  opacity: 0;
+  top: -200px;
+  right: -200px;
+}
+
+.cometa1 {
+  animation: cometa1 6s 4s infinite;
+}
+
+@keyframes cometa1 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    top: 150vh;
+    right: 100%;
+    opacity: 1;
+  }
+}
+
+.cometa2 {
+  top: -20px;
+  right: 300px;
+  animation: cometa2 6s 8s infinite;
+}
+
+@keyframes cometa2 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    top: 150vh;
+    right: 150%;
+    opacity: 1;
+  }
+}
+
+.cometa3 {
+  right: 0;
+  animation: cometa3 5s 10s infinite;
+}
+
+@keyframes cometa3 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    top: 150vh;
+    right: 100%;
+    opacity: 1;
+  }
+}
+
+.cometa4 {
+  right: 400px;
+  animation: cometa4 8s 15s infinite;
+}
+
+@keyframes cometa4 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    top: 100vh;
+    right: 140%;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 800px) {
+  .cometa {
+    width: 10px;
+    transform: rotate(-20deg);
+  }
+
+  .eE {
+    width: 20px;
+    animation: eE 4s 1 linear forwards;
+  }
+
+  @keyframes eE {
+    0% {
+      bottom: 5px;
+      right: 70%;
+    }
+    100% {
+      bottom: 5px;
+      right: 100%;
+      opacity: 0;
+    }
+  }
+}

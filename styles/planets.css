@@ -1,0 +1,413 @@
+/* galaxy config grid*/
+
+.autor {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+.autor span {
+  color: aqua;
+}
+
+.autor.oculto {
+  display: none;
+}
+
+.github {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+}
+
+.github img {
+  width: 40px;
+  filter: invert(100%);
+}
+
+.github img:hover {
+  filter: invert(50%);
+}
+
+.github.oculto {
+  display: none;
+}
+
+.solar-system {
+  opacity: 0;
+}
+
+.solar-system.anima {
+  animation: scale 1s 1 ease-out forwards;
+}
+
+.solar-system.oculto {
+  display: none;
+}
+
+.solar-system__planets {
+  display: grid;
+  place-items: center;
+}
+
+/* planets config */
+.planets {
+  border-radius: 50%;
+  position: absolute;
+  border: calc(var(--unidade-tamanho) - 0.9rem) solid rgba(128, 128, 128, 0.3);
+}
+
+.planets::after {
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+/* sun */
+.solar-system__planets-sun {
+  background-image: url("../images/planets/sun.png");
+  width: calc(var(--unidade-tamanho) * 4);
+  height: calc(var(--unidade-tamanho) * 4);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  box-shadow: 5px 5px 150px orange;
+  border-radius: 100%;
+}
+
+/* mercury */
+.solar-system__planets-mercury {
+  width: calc(var(--unidade-tamanho) * 7);
+  height: calc(var(--unidade-tamanho) * 7.5);
+  animation: rotate 4s linear infinite;
+}
+
+.solar-system__planets-mercury::after {
+  content: "";
+  background-image: url("../images/planets/mercury.png");
+  width: calc(var(--unidade-tamanho) - 0.25rem);
+  height: calc(var(--unidade-tamanho) - 0.25rem);
+  top: calc(var(--unidade-tamanho) + 0.8rem);
+}
+
+/* venus */
+.solar-system__planets-venus {
+  width: calc(var(--unidade-tamanho) * 12);
+  height: calc(var(--unidade-tamanho) * 12.5);
+  animation: rotate 12s linear infinite;
+}
+
+.solar-system__planets-venus::after {
+  content: "";
+  background-image: url("../images/planets/venus.png");
+  width: calc(var(--unidade-tamanho) + 0.2rem);
+  height: calc(var(--unidade-tamanho) + 0.2rem);
+  top: calc(var(--unidade-tamanho) + 2rem);
+}
+
+/* earth */
+.solar-system__planets-earth {
+  width: calc(var(--unidade-tamanho) * 17.5);
+  height: calc(var(--unidade-tamanho) * 18);
+  animation: rotate 20s linear infinite;
+}
+
+.solar-system__planets-earth::after {
+  content: "";
+  background-image: url("../images/planets/earth.png");
+  width: calc(var(--unidade-tamanho) + 0.3rem);
+  height: calc(var(--unidade-tamanho) + 0.3rem);
+  top: calc(var(--unidade-tamanho) + 4rem);
+}
+
+/* mars */
+.solar-system__planets-mars {
+  width: calc(var(--unidade-tamanho) * 22.6);
+  height: calc(var(--unidade-tamanho) * 23);
+  animation: rotate 40s linear infinite;
+}
+
+.solar-system__planets-mars::after {
+  content: "";
+  background-image: url("../images/planets/mars.png");
+  width: calc(var(--unidade-tamanho) + 0.2rem);
+  height: calc(var(--unidade-tamanho) + 0.2rem);
+  top: calc(var(--unidade-tamanho) + 6rem);
+}
+
+/* jupiter */
+.solar-system__planets-jupiter {
+  width: calc(var(--unidade-tamanho) * 28);
+  height: calc(var(--unidade-tamanho) * 28.5);
+  animation: rotate 65s linear infinite;
+}
+
+.solar-system__planets-jupiter::after {
+  content: "";
+  background-image: url("../images/planets/jupiter.png");
+  width: calc(var(--unidade-tamanho) + 1.4rem);
+  height: calc(var(--unidade-tamanho) + 1.4rem);
+  top: calc(var(--unidade-tamanho) + 6rem);
+}
+
+/* saturn */
+.solar-system__planets-saturn {
+  width: calc(var(--unidade-tamanho) * 33);
+  height: calc(var(--unidade-tamanho) * 33.5);
+  animation: rotate 80s linear infinite;
+}
+
+.solar-system__planets-saturn::after {
+  content: "";
+  background-image: url("../images/planets/saturn.png");
+  width: calc(var(--unidade-tamanho) + 1.5rem);
+  height: calc(var(--unidade-tamanho) + 1rem);
+  top: calc(var(--unidade-tamanho) + 7.5rem);
+}
+
+/* uranus */
+.solar-system__planets-uranus {
+  width: calc(var(--unidade-tamanho) * 38);
+  height: calc(var(--unidade-tamanho) * 38.5);
+  animation: rotate 110s linear infinite;
+}
+
+.solar-system__planets-uranus::after {
+  content: "";
+  background-image: url("../images/planets/uranus.png");
+  width: calc(var(--unidade-tamanho) + 0.7rem);
+  height: calc(var(--unidade-tamanho) + 0.7rem);
+  top: calc(var(--unidade-tamanho) + 12rem);
+}
+
+/* neptune */
+.solar-system__planets-neptune {
+  width: calc(var(--unidade-tamanho) * 42);
+  height: calc(var(--unidade-tamanho) * 42.5);
+  animation: rotate 130s linear infinite;
+}
+
+.solar-system__planets-neptune::after {
+  content: "";
+  background-image: url("../images/planets/neptune.png");
+  width: calc(var(--unidade-tamanho) + 0.7rem);
+  height: calc(var(--unidade-tamanho) + 0.7rem);
+  top: calc(var(--unidade-tamanho) + 13rem);
+}
+
+/* responsive planetas - tabletes */
+
+/* sun config */
+@media (max-width: 600px) {
+  .solar-system__planets-sun {
+    width: calc(var(--unidade-tamanho) * 3);
+    height: calc(var(--unidade-tamanho) * 3);
+  }
+
+  /* mercury */
+  .solar-system__planets-mercury {
+    width: calc(var(--unidade-tamanho) * 5);
+    height: calc(var(--unidade-tamanho) * 5);
+  }
+
+  .solar-system__planets-mercury::after {
+    width: calc(var(--unidade-tamanho) - 0.5rem);
+    height: calc(var(--unidade-tamanho) - 0.5rem);
+  }
+
+  /* venusy */
+  .solar-system__planets-venus {
+    width: calc(var(--unidade-tamanho) * 8);
+    height: calc(var(--unidade-tamanho) * 8.5);
+  }
+
+  .solar-system__planets-venus::after {
+    width: calc(var(--unidade-tamanho));
+    height: calc(var(--unidade-tamanho));
+    top: calc(var(--unidade-tamanho) + 1rem);
+  }
+
+  /* earth */
+  .solar-system__planets-earth {
+    width: calc(var(--unidade-tamanho) * 12.5);
+    height: calc(var(--unidade-tamanho) * 13);
+  }
+
+  .solar-system__planets-earth::after {
+    width: calc(var(--unidade-tamanho) + 0.1rem);
+    height: calc(var(--unidade-tamanho) + 0.1rem);
+    top: calc(var(--unidade-tamanho) + 2rem);
+  }
+
+  /* mars */
+  .solar-system__planets-mars {
+    width: calc(var(--unidade-tamanho) * 17.6);
+    height: calc(var(--unidade-tamanho) * 17);
+  }
+
+  .solar-system__planets-mars::after {
+    width: calc(var(--unidade-tamanho));
+    height: calc(var(--unidade-tamanho));
+    top: calc(var(--unidade-tamanho) + 4rem);
+  }
+
+  /* jupiter */
+  .solar-system__planets-jupiter {
+    width: calc(var(--unidade-tamanho) * 22);
+    height: calc(var(--unidade-tamanho) * 22.5);
+  }
+
+  .solar-system__planets-jupiter::after {
+    width: calc(var(--unidade-tamanho) + 1.2rem);
+    height: calc(var(--unidade-tamanho) + 1.2rem);
+    top: calc(var(--unidade-tamanho) + 4rem);
+  }
+
+  /* saturn */
+  .solar-system__planets-saturn {
+    width: calc(var(--unidade-tamanho) * 27);
+    height: calc(var(--unidade-tamanho) * 27.5);
+  }
+
+  .solar-system__planets-saturn::after {
+    width: calc(var(--unidade-tamanho) + 1.4rem);
+    height: calc(var(--unidade-tamanho) + 0.5rem);
+    top: calc(var(--unidade-tamanho) + 6rem);
+  }
+
+  /* uranus */
+  .solar-system__planets-uranus {
+    width: calc(var(--unidade-tamanho) * 32);
+    height: calc(var(--unidade-tamanho) * 32.5);
+  }
+
+  .solar-system__planets-uranus::after {
+    width: calc(var(--unidade-tamanho) + 0.4rem);
+    height: calc(var(--unidade-tamanho) + 0.4rem);
+    top: calc(var(--unidade-tamanho) + 10rem);
+  }
+
+  /* neptune */
+  .solar-system__planets-neptune {
+    width: calc(var(--unidade-tamanho) * 35);
+    height: calc(var(--unidade-tamanho) * 35.5);
+  }
+
+  .solar-system__planets-neptune::after {
+    width: calc(var(--unidade-tamanho) + 0.4rem);
+    height: calc(var(--unidade-tamanho) + 0.4rem);
+    top: calc(var(--unidade-tamanho) + 10rem);
+  }
+}
+
+/* responsive planets - smartphones */
+@media (max-width: 450px) {
+  .github img {
+    width: 30px;
+    filter: invert(100%);
+  }
+
+  .solar-system__planets-sun {
+    width: calc(var(--unidade-tamanho) * 2);
+    height: calc(var(--unidade-tamanho) * 2);
+  }
+
+  /* mercury */
+  .solar-system__planets-mercury {
+    width: calc(var(--unidade-tamanho) * 4);
+    height: calc(var(--unidade-tamanho) * 4);
+  }
+
+  .solar-system__planets-mercury::after {
+    width: calc(var(--unidade-tamanho) - 0.5rem);
+    height: calc(var(--unidade-tamanho) - 0.5rem);
+    top: calc(var(--unidade-tamanho) + 1.7rem);
+  }
+
+  /* venusy */
+  .solar-system__planets-venus {
+    width: calc(var(--unidade-tamanho) * 7);
+    height: calc(var(--unidade-tamanho) * 7.5);
+  }
+
+  .solar-system__planets-venus::after {
+    width: calc(var(--unidade-tamanho) - 0.1rem);
+    height: calc(var(--unidade-tamanho) - 0.2rem);
+    top: calc(var(--unidade-tamanho) + 4rem);
+  }
+
+  /* earth */
+  .solar-system__planets-earth {
+    width: calc(var(--unidade-tamanho) * 10.5);
+    height: calc(var(--unidade-tamanho) * 11);
+  }
+
+  .solar-system__planets-earth::after {
+    width: calc(var(--unidade-tamanho));
+    height: calc(var(--unidade-tamanho));
+    top: calc(var(--unidade-tamanho) + 2rem);
+  }
+
+  /* mars */
+  .solar-system__planets-mars {
+    width: calc(var(--unidade-tamanho) * 14.6);
+    height: calc(var(--unidade-tamanho) * 14);
+  }
+
+  .solar-system__planets-mars::after {
+    width: calc(var(--unidade-tamanho) - 0.1rem);
+    height: calc(var(--unidade-tamanho) - 0.1rem);
+    top: calc(var(--unidade-tamanho) + 3rem);
+  }
+
+  /* jupiter */
+  .solar-system__planets-jupiter {
+    width: calc(var(--unidade-tamanho) * 18);
+    height: calc(var(--unidade-tamanho) * 18.5);
+  }
+
+  .solar-system__planets-jupiter::after {
+    width: calc(var(--unidade-tamanho) + 0.5rem);
+    height: calc(var(--unidade-tamanho) + 0.5rem);
+    top: calc(var(--unidade-tamanho) + 4rem);
+  }
+
+  /* saturn */
+  .solar-system__planets-saturn {
+    width: calc(var(--unidade-tamanho) * 22);
+    height: calc(var(--unidade-tamanho) * 22.5);
+  }
+
+  .solar-system__planets-saturn::after {
+    width: calc(var(--unidade-tamanho) + 0.6rem);
+    height: calc(var(--unidade-tamanho) + 0.5rem);
+    top: calc(var(--unidade-tamanho) + 5rem);
+  }
+
+  /* uranus */
+  .solar-system__planets-uranus {
+    width: calc(var(--unidade-tamanho) * 25);
+    height: calc(var(--unidade-tamanho) * 25.5);
+  }
+
+  .solar-system__planets-uranus::after {
+    width: calc(var(--unidade-tamanho) + 0.2rem);
+    height: calc(var(--unidade-tamanho) + 0.2rem);
+    top: calc(var(--unidade-tamanho) + 7rem);
+  }
+
+  /* neptune */
+  .solar-system__planets-neptune {
+    width: calc(var(--unidade-tamanho) * 28);
+    height: calc(var(--unidade-tamanho) * 28.5);
+  }
+
+  .solar-system__planets-neptune::after {
+    width: calc(var(--unidade-tamanho) + 0.2rem);
+    height: calc(var(--unidade-tamanho) + 0.2rem);
+    top: calc(var(--unidade-tamanho) + 8rem);
+  }
+}

@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap");
+
+:root {
+  --unidade-tamanho: 1rem;
+}
+
+* {
+  transition: 0.5s;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+
+body {
+  padding-top: calc(var(--unidade-tamanho) * 4);
+  background-image: url("../images/other-images/background.jpg");
+  min-height: 100vh;
+  background-size: cover;
+  animation: background-solar-system 150s infinite;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  zoom: 0.9;
+}
+
+@media (max-width: 450px) {
+  body {
+    padding-top: calc(var(--unidade-tamanho) * 8);
+    zoom: 0.8;
+  }
+}
+
+@media (max-width: 380px) {
+  body {
+    padding-top: calc(var(--unidade-tamanho) * 8);
+    zoom: 0.7;
+  }
+}
+
+@media (max-width: 320px) {
+  body {
+    padding-top: calc(var(--unidade-tamanho) * 13);
+    zoom: 0.6;
+  }
+}
