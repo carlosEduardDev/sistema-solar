@@ -58,7 +58,7 @@
   <li>Desenvolvedor Front-End</li>
 </ul>
 
-<h2 id="consideracoes">Conseiderações Finais:</h2>
+<h2 id="consideracoes">Considerações Finais:</h2>
 
 <p>Esse é um projeto pessoal o qual a tempos pensei em desenvolver, mas não sabia bem como. Hoje, já com mais entendimento das linguagens, me sinto capaz para enfrentar esses desafios!</p>
 
