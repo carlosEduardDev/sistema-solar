@@ -49,7 +49,7 @@
   <a href="https://github.com/carlosEduardDev">
     <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
   </a> 
-  <a href="https://api.whatsapp.com/send?phone=11974265092/">
+  <a href="https://api.whatsapp.com/send?phone=5511974265092/">
     <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
   </a>   
 </p>
