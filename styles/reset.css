@@ -23,7 +23,7 @@ body {
   zoom: 0.9;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
   body {
     padding-top: calc(var(--unidade-tamanho) * 8);
     zoom: 0.8;
