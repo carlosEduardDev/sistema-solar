@@ -1,0 +1,31 @@
+{
+  "background_color": "#000000",
+  "description": "App que permite aprender um pouco sobre os astros do sistema solar!",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "sistema-solar-astros.vercel",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "sistema-solar-astros.vercel",
+  "start_url": "https://sistema-solar-astros.vercel.app/",
+  "theme_color": "#ffffff",
+  "categories": [
+    "education"
+  ],
+  "screenshots": [],
+  "icons": [
+    {
+      "src": "./images/other-images/favicon.png",
+      "type": "image/png",
+      "sizes": "300x300"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Solares",
+      "url": "https://sistema-solar-astros.vercel.app/",
+      "description": "Site"
+    }
+  ],
+  "lang": "pt"
+}
