@@ -8,7 +8,7 @@
   "scope": "/",
   "short_name": "sistema-solar-astros.vercel",
   "start_url": "https://sistema-solar-astros.vercel.app/",
-  "theme_color": "#ffffff",
+  "theme_color": "#000000",
   "categories": [
     "education"
   ],
